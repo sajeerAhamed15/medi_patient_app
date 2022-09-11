@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Medi - User App"
+        android:textColor="@color/teal_700"
+        android:textSize="56dp" />
+
+    <TextView
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="See all my Medical Records"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18dp" />
+
+    <Button
+        android:onClick="viewClicked"
+        android:id="@+id/login"
+        android:layout_marginHorizontal="36dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal_700"
+        android:background="@drawable/edittext_bg_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View History" />
+
+
+    <TextView
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Give permission to the Doctor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18dp" />
+
+    <Button
+        android:onClick="qrClicked"
+        android:id="@+id/qr_clicked"
+        android:layout_marginHorizontal="36dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal_700"
+        android:background="@drawable/edittext_bg_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reveal QR" />
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:id="@+id/idIVQrcode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
